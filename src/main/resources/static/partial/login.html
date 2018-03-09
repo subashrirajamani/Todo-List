@@ -1,0 +1,28 @@
+<section data-ng-controller="logincontroller">
+<div style="align-items: center; text-align: center;">
+		<h1 style="color: #33aaaa">
+			<b>Login</b>
+		</h1>
+		<br>
+		<br>
+		<br> <input class="form-control" id="email" type="text" data-ng-model="user_input"
+			placeholder="Email-Id..."> <br>
+
+		<div id="pwd_div" class="form-group has-feedback">
+
+			<input class="form-control" data-ng-model="pwd_input" id="pwd"
+				type="password" placeholder="Password..."> 
+
+		</div>
+		<br>
+		<div class="checkbox checkbox-info">
+			<input id="checkbox4" type="checkbox" data-ng-click="clickshow()">
+			<label for="checkbox4"> Show Password </label>
+		</div>
+		<br>
+		<button class="btn btn-primary" style="width: 100%" data-ng-click="signIn()">Sign
+			In</button>
+		<br>
+		<br> <button class="btn btn-primary" style="width: 100%" data-ng-click="register()">Register</button>
+	</div>
+</section>
